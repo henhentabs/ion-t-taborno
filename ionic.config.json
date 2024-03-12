@@ -1,0 +1,7 @@
+{
+  "name": "ion-t-taborno",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
