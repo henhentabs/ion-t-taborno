@@ -4,8 +4,33 @@
 }
 
 #profile_pic {
-    width: 70px;
-    margin-top: 20px;
+    width: 135px;
+    margin-top: -70px;
     margin-bottom: -15px;
     margin-left: 7px;
+}
+
+#modal_cover_pic {
+    width: 80%;
+    height: 82%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal_prof_pic {
+    width: 80%;
+    height: 55%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#modal_close_button{
+    position: absolute;
+    margin-left: 285px;
+    /* background-color: transparent;
+    border-radius: 50px; */
 }
