@@ -14,7 +14,8 @@ import { calculatorOutline, ellipse, fingerPrintOutline, personCircleOutline, sq
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
-
+// Home resources
+import Home from './pages/home';
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -41,6 +42,9 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
+        <Route exact path="/Home">
+            <Home />
+          </Route>
           <Route exact path="/tab1">
             <Tab1 />
           </Route>
@@ -55,6 +59,10 @@ const App: React.FC = () => (
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
+        <IonTabButton tab="tab1" href="/tab1">
+            <IonIcon aria-hidden="true" icon={personCircleOutline} />
+            <IonLabel>Home</IonLabel>
+          </IonTabButton>
           <IonTabButton tab="tab1" href="/tab1">
             <IonIcon aria-hidden="true" icon={personCircleOutline} />
             <IonLabel>Profile</IonLabel>
