@@ -122,19 +122,21 @@ const Tab1: React.FC = () => {
             isOpen={showModal_coverpic}
             onDidDismiss={() => setShowModal_coverpic(false)}
             id="modal_cover_pic"
+            className="custom-modal"
           >
-            <img alt="Silhouette of mountains" src="../src/assets/img/COVER_PIC_WHOLE_JPG.jpg" />
-            <IonButton color="light" id="modal_close_button" onClick={() => setShowModal_coverpic(false)}>X</IonButton>
+            <img alt="Silhouette of mountains" id="coverpic" src="../src/assets/img/COVER_PIC_WHOLE_JPG.jpg" />
+            <IonButton color="light" id="modal_coverpic_close_button" onClick={() => setShowModal_coverpic(false)}>X</IonButton>
           </IonModal>
           
           <IonModal
             isOpen={showModal_profpic}
             onDidDismiss={() => setShowModal_profpic(false)}
             id="modal_prof_pic"
+            className="custom-modal"
           >
             {/* <img alt="Silhouette of mountains" src="../src/assets/img/HENHEN_JPG.jpg" /> */}
-            <img alt="Silhouette of mountains" src="../src/assets/img/HEN_CIRCLE_PINK_PNG.png" />
-            <IonButton color="light" id="modal_close_button" onClick={() => setShowModal_profpic(false)}>X</IonButton>
+            <img alt="Silhouette of mountains" id="profpic" src="../src/assets/img/HEN_CIRCLE_PINK_PNG.png" />
+            <IonButton color="light" id="modal_profpic_close_button" onClick={() => setShowModal_profpic(false)}>X</IonButton>
           </IonModal>
 
 
