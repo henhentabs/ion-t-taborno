@@ -17,9 +17,10 @@ const Home: React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>
         <img src="../src/assets/img/HEN_CIRCLE_PINK_PNG.png" alt="profile" />
-        <h1>Hello Everyone!<br></br>I am Hencez Heart M. Taborno.<br></br>A 3rd year BSIT student of NBSC.</h1>
+        <h1 style={{ textAlign: 'center' }}>Hello Everyone!<br />I am Hencez Heart M. Taborno.<br />A 3rd year BSIT student of NBSC.</h1>
       </IonContent>
     </IonPage>
+
   );
 };
 
