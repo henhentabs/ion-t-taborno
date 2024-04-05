@@ -12,9 +12,16 @@ import {
 import { IonReactRouter } from '@ionic/react-router';
 import { home, calculatorOutline, ellipse, fingerPrintOutline, personCircleOutline, square, triangle } from 'ionicons/icons';
 import Home from './pages/Home';
-import Tab1 from './pages/Profile';
-import Tab2 from './pages/Click_counter';
-import Tab3 from './pages/Calculator';
+
+import Profile from './pages/Profile';
+import Click_counter from './pages/Click_counter';
+import Calculator from './pages/Calculator';
+
+import Profile from './pages/Profile';
+import Click_counter from './pages/Click_counter';
+import Calculator from './pages/Calculator';
+// Home resources
+import Home from './pages/Home';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
