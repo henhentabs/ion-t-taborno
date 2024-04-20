@@ -10,38 +10,89 @@ import {
   IonCardContent,
   IonCardHeader,
   IonCardTitle,
-  IonImg
 } from '@ionic/react';
-import { chatbubblesOutline, notificationsOutline, personAddOutline, chevronDownOutline } from 'ionicons/icons';
+import { pulseOutline, calculatorOutline } from 'ionicons/icons';
+import { useHistory } from 'react-router-dom';
 
 const Home: React.FC = () => {
+  const history = useHistory();
+
+  const goToClickCounter = () => {
+    history.push('/click_counter');
+  };
+
+  const goToCalculator = () => {
+    history.push('/calculator');
+  };
+
+
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
           <IonTitle>Home</IonTitle>
-          <IonIcon slot="end" icon={chatbubblesOutline} />
-          <IonIcon slot="end" icon={notificationsOutline} />
-          <IonIcon slot="end" icon={personAddOutline} />
         </IonToolbar>
+        <hr />
       </IonHeader>
-      <IonContent fullscreen>
-        <IonCard>
-          <IonImg src="../src/assets/img/HEN_CIRCLE_PINK_PNG.png" alt="profile" />
-          <IonCardHeader>
-            <IonCardTitle style={{ textAlign: 'center' }}>Hencez Heart M. Taborno</IonCardTitle>
-          </IonCardHeader>
-          <IonCardContent style={{ textAlign: 'center' }}>
-            <p>3rd year BSIT student of NBSC.</p>
-          </IonCardContent>
-        </IonCard>
-        <div style={{ textAlign: 'center', marginTop: '10px' }}>
-          <p>See more</p>
-          <IonIcon icon={chevronDownOutline} style={{ fontSize: '24px', color: 'white' }} />
+      <IonContent fullscreen className="ion-padding">
+        <div className="ion-text-center" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+          <div> {/* Centering content */}
+
+            <IonCard id="card1" onClick={goToClickCounter} style={{ width: '350px', cursor: 'pointer' }}>
+              <IonCardContent style={{ height: '70px', fontSize: '30px', display: 'flex', alignItems: 'center', padding: 0 }}>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80px', flex: '20%', backgroundColor: 'var(--ion-color-light)', padding: 0 }}>
+                  <IonIcon icon={pulseOutline} slot="start" />
+                  
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80px', flex: '80%', backgroundColor: 'var(--ion-color-primary)', color: 'white', padding: 0 }}>
+                  Click Counter
+                </div>
+              </IonCardContent>
+            </IonCard>
+
+            <IonCard id="card2" onClick={goToCalculator} style={{ width: '350px', cursor: 'pointer' }}>
+              <IonCardContent style={{ height: '70px', fontSize: '30px', display: 'flex', alignItems: 'center', padding: 0 }}>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80px', flex: '20%', backgroundColor: 'var(--ion-color-light)', padding: 0 }}>
+                  <IonIcon icon={calculatorOutline} slot="start" />
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80px', flex: '80%', backgroundColor: 'var(--ion-color-secondary)', color: 'white', padding: 0 }}>
+                  Calculator
+                </div>
+              </IonCardContent>
+            </IonCard>
+
+            
+            <IonCard id="card3" style={{ width: '350px', cursor: 'pointer' }}>
+              <IonCardContent style={{ height: '70px', fontSize: '30px', display: 'flex', alignItems: 'center', padding: 0 }}>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80px', flex: '20%', backgroundColor: 'var(--ion-color-light)', padding: 0 }}>
+                  <IonIcon slot="start" />
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80px', flex: '80%', backgroundColor: 'var(--ion-color-danger)', color: 'white', padding: 0 }}>
+                  
+                </div>
+              </IonCardContent>
+            </IonCard>
+
+            <IonCard id="card4" style={{ width: '350px', cursor: 'pointer' }}>
+              <IonCardContent style={{ height: '70px', fontSize: '30px', display: 'flex', alignItems: 'center', padding: 0 }}>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80px', flex: '20%', backgroundColor: 'var(--ion-color-light)', padding: 0 }}>
+                  <IonIcon slot="start" />
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80px', flex: '80%', backgroundColor: 'var(--ion-color-warning)', color: 'white', padding: 0 }}>
+                  
+                </div>
+              </IonCardContent>
+            </IonCard>
+
+
+            
+          </div>
         </div>
       </IonContent>
+
     </IonPage>
   );
+  
 };
 
 export default Home;

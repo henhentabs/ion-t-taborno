@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonBackButton, IonButtons } from '@ionic/react';
 
 const ClickCounter: React.FC = () => {
   const [count, setCount] = useState(0);
@@ -19,6 +19,9 @@ const ClickCounter: React.FC = () => {
           <IonTitle>Click Counter</IonTitle>
         </IonToolbar>
       </IonHeader>
+      <IonButtons slot="start">
+        <IonBackButton defaultHref="/" />
+      </IonButtons>
       <IonContent fullscreen className="ion-padding">
         <div className="ion-text-center">
           <h1>Count: {count}</h1>
