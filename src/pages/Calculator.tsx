@@ -1,6 +1,6 @@
 // Calculator.tsx
 import React, { useState } from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonGrid, IonRow, IonCol, IonInput, IonBackButton, IonButtons } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonGrid, IonRow, IonCol, IonInput,IonButtons,IonBackButton } from '@ionic/react';
 import './Calculator.css';
 
 const Calculator: React.FC = () => {
