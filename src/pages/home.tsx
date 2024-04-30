@@ -67,6 +67,16 @@ const cardData = [
       tag1: logoIonic,
       tag2: logoReact
     }
+  },
+  {
+    title: 'Quote Generator',
+    icon: chatbubble,
+    subtitle: 'Applet #4',
+    link: '/quotesgenerator',
+    tags: {
+      tag1: logoIonic,
+      tag2: logoReact
+    }
   }
   
 ];
