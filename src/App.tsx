@@ -14,9 +14,10 @@ import { home, calculatorOutline, ellipse, fingerPrintOutline, personCircleOutli
 import Home from './pages/Home';
 
 import Profile from './pages/Profile';
-import Click_counter from './pages/Click_counter';
+import ClickCounter from './pages/ClickCounter';
 import Calculator from './pages/Calculator';
 import Todolist from './pages/Todolist';
+import QuotesGenerator from './pages/QuotesGenerator';
 
 
 
@@ -57,8 +58,8 @@ const App: React.FC = () => (
           </Route>
 
           
-          <Route exact path="/click_counter">
-            <Click_counter />
+          <Route exact path="/clickcounter">
+            <ClickCounter />
           </Route>
           <Route exact path="/calculator">
             <Calculator />
@@ -66,6 +67,10 @@ const App: React.FC = () => (
 
           <Route exact path="/todolist">
             <Todolist />
+          </Route>
+          
+          <Route exact path="/quotesgenerator">
+            <QuotesGenerator />
           </Route>
 
 
