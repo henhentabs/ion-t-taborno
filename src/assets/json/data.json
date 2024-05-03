@@ -1,23 +1,22 @@
 [
-    {
-      "id": 1,
-      "message": "Whatever you do, do it well. – Walt Disney"
-    },
-    {
-      "id": 2,
-      "message": "What we think, we become. – Buddha"
-    },
-    {
-      "id": 3,
-      "message": "God is most glorified in us when we are most satisfied in Him. – John Piper"
-    },
-    {
-      "id": 4,
-      "message": "Let your life reflect the faith you have in God. Fear nothing and pray about everything. Be strong, trust God's word, and trust the process. – Germany Kent"
-    },
-    {
-      "id": 5,
-      "message": "The only way to do great work is to love what you do. – Steve Jobs"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "message": "Whatever you do, do it well. – Walt Disney"
+  },
+  {
+    "id": 2,
+    "message": "What we think, we become. – Buddha"
+  },
+  {
+    "id": 3,
+    "message": "God is most glorified in us when we are most satisfied in Him. – John Piper"
+  },
+  {
+    "id": 4,
+    "message": "Let your life reflect the faith you have in God. Fear nothing and pray about everything. Be strong, trust God's word, and trust the process. – Germany Kent"
+  },
+  {
+    "id": 5,
+    "message": "The only way to do great work is to love what you do. – Steve Jobs"
+  }
+]
