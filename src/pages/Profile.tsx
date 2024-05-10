@@ -44,8 +44,8 @@ const Profile: React.FC = () => {
         </IonHeader>
         
         <IonCard>
-          <img alt="Silhouette of mountains" id="cover_pic" onClick={toggleModal_coverpic} src="../src/assets/img/COVER_PIC_CROPPED_JPG.jpg" />
-          <img alt="Silhouette of mountains" id="profile_pic" onClick={toggleModal_profpic} src="../src/assets/img/HEN_CIRCLE_PINK_PNG.png" />  
+          <img alt="Silhouette of mountains" id="cover_pic" onClick={toggleModal_coverpic} src="https://raw.githubusercontent.com/henhentabs/ion-t-taborno/main/src/assets/img/COVER_PIC_CROPPED_JPG.jpg" />
+          <img alt="Silhouette of mountains" id="profile_pic" onClick={toggleModal_profpic} src="https://raw.githubusercontent.com/henhentabs/ion-t-taborno/main/src/assets/img/HEN_CIRCLE_PINK_PNG.png" />  
 
           <IonCardHeader>
             <IonCardTitle>Hencez Heart M. Taborno</IonCardTitle>
