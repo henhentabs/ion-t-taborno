@@ -20,7 +20,7 @@ const ClickCounter: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonButtons slot="start">
-        <IonBackButton defaultHref="/" />
+        <IonBackButton defaultHref="/ion-t-taborno/home" />
       </IonButtons>
       <IonContent fullscreen className="ion-padding">
         <div className="ion-text-center">

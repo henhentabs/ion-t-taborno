@@ -165,7 +165,7 @@ const TodoList: React.FC = () => {
       <IonHeader>
         <IonToolbar>
           <IonButtons slot="start">
-            <IonBackButton defaultHref="/" />
+            <IonBackButton defaultHref="/ion-t-taborno/home" />
           </IonButtons>
           <IonTitle>To Do List</IonTitle>
         </IonToolbar>
