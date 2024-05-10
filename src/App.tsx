@@ -52,10 +52,10 @@ const App: React.FC = () => (
       <IonTabs>
         <IonRouterOutlet>
           
-          <Route exact path="/">
-            <Redirect to="/home" />
+          <Route exact path="/ion-t-taborno/">
+            <Redirect to="/ion-t-taborno/home" />
           </Route>
-          <Route exact path="/home">
+          <Route exact path="/ion-t-taborno/home">
             <Home />
           </Route>
 
