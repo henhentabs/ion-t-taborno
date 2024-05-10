@@ -60,32 +60,32 @@ const App: React.FC = () => (
           </Route>
 
           
-          <Route exact path="/clickcounter">
+          <Route exact path="/ion-t-taborno/clickcounter">
             <ClickCounter />
           </Route>
-          <Route exact path="/calculator">
+          <Route exact path="/ion-t-taborno/calculator">
             <Calculator />
           </Route>
 
-          <Route exact path="/todolist">
+          <Route exact path="/ion-t-taborno/todolist">
             <Todolist />
           </Route>
           
-          <Route exact path="/quotesgenerator">
+          <Route exact path="/ion-t-taborno/quotesgenerator">
             <QuotesGenerator />
           </Route>
 
-          <Route exact path="/notes">
+          <Route exact path="/ion-t-taborno/notes">
             <Notes />
           </Route>
 
-          <Route exact path="/profile">
+          <Route exact path="/ion-t-taborno/profile">
             <Profile />
           </Route>
 
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="home" href="/home">
+          <IonTabButton tab="home" href="/ion-t-taborno/home">
             <IonIcon aria-hidden="true" icon={home} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
@@ -109,7 +109,7 @@ const App: React.FC = () => (
             <IonIcon aria-hidden="true" />
             <IonLabel></IonLabel>
           </IonTabButton>
-          <IonTabButton tab="profile" href="/profile">
+          <IonTabButton tab="profile" href="/ion-t-taborno/profile">
             <IonIcon aria-hidden="true" icon={personCircleOutline} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton>
